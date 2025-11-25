@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(135deg, blue 0% , purple 50%);
+    background-repeat: no-repeat
+}
+.page-wrapper{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 24px;
+}
+.contact-card{
+    background: white;
+    width: 400px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px black;
+
+}
+.card-header{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.card-header p{
+    font-size: 16px;
+    color:gray;
+    margin-top: 10px;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px; 
+}
+.form-group{
+    display: block;
+}
+label{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+
+input:valid:not(:placeholder-shown){
+    border-color: green;
+}
+
+select:valid:not(:placeholder-shown){
+    border-color: green;
+}
+
+textarea:valid:not(:placeholder-shown){
+    border-color: green;
+}
+
+input:invalid:not(:placeholder-shown){
+    border-color:red;
+}
+
+select:invalid:not(:placeholder-shown){
+    border-color: red;
+}
+
+textarea:invalid:not(:placeholder-shown){
+    border-color:red;
+}
+
+
+input,select,textarea {
+  font: inherit;
+  padding: 11px 12px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  outline: none;
+  width: 375px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  background-color: #f9fafb;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+.submit-btn{
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px 10px;
+    font-weight: bold;
+    background-color: blue;
+    color: white;
+    transition: all 0.3s ease;
+
+}
+.submit-btn:hover{
+background-color: white;
+color: blue;
+transform: scale(1.01);
+box-shadow: 0 10px 22px rgba(79, 70, 229, 0.35);
+
+}
